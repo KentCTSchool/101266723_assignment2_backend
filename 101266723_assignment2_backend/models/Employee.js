@@ -9,13 +9,13 @@ const EmployeeSchema = new mongoose.Schema({
   },
   lastname: {
     type: String,
-    required: [true, 'Please enter firstname'],
+    required: [true, 'Please enter lastname'],
     trim: true,
     lowercase: true
   },
   email: {
     type: String,
-    required: [true, 'Please enter firstname'],
+    required: [true, 'Please enter email'],
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address'],
     trim: true,
     lowercase: true
